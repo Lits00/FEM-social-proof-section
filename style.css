@@ -1,0 +1,154 @@
+*{
+    font-family: 'League Spartan';
+    margin: 0;
+    font-size: 15px;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 7% 0;
+}
+
+.left-container h1{
+    margin: 20px 0;
+    font-size: 3rem;
+    color: hsl(300, 64%, 25%);
+}
+
+.left-container p{
+    color: gray;
+    line-height: 1.3;
+}
+
+.right-container{
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    grid-row-gap: 10px;
+}
+
+.right-container p{
+    color: hsl(300, 64%, 25%);
+    font-weight: 700;
+}
+
+.right-container span{
+    margin-right: 20px;
+}
+
+.rate-container{
+    padding: 15px 30px;
+    width: 350px;
+    border-radius: 5px;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.rating-2{
+    margin-left: 45px;
+}
+  
+.rating-3{
+    margin-left: 90px;
+}
+  
+.bottom-container{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 325px 325px 325px;
+    justify-content: space-between;
+}
+
+.bottom-container img{
+    border-radius: 100%;
+    float: left;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.user-info{
+    width: 150px;
+    line-height: 1.3;
+}
+
+.user-txt{
+    clear: left;
+    padding: 20px 15px 0 0;
+    line-height: 1.3;
+}
+
+.txt-2{
+    padding-right: 20px;
+}
+
+.comment-container{
+    background-color: hsl(300, 64%, 25%);
+    border-radius: 5px;
+    color: white;
+    height: 140px;
+    width: 275px;
+    padding: 30px 25px 30px 25px;
+}
+
+.comment-container span{
+    color: hsl(333, 80%, 67%);
+}
+
+.user-2{
+    margin-top: 15px;
+}
+
+.user-3{
+    margin-top: 30px;
+}
+
+@media (max-width: 1050px) {
+    .main-container{
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 400px;
+
+    }
+
+    .left-container{
+      width: 400px;
+      text-align: center;
+    }
+
+    .right-container{
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+    }
+    
+    .right-container span{
+      display: block;
+      margin: 0 0 10px;
+    }
+
+    .rate-container{
+      padding: 15px 25px;
+      text-align: center;
+    }
+
+    .rating-2,.rating-3{
+      margin: 0;
+    }
+    
+    .bottom-container{
+      display: grid;
+      grid-template-columns: 400px;
+    }
+
+    .comment-container{
+      width: 350px;
+    }
+
+    .user-3{
+        margin-top: 15px;
+    }
+}
